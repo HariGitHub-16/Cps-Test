@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPS Test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background-color: yellow;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 40px !important; 
+                width : 100% !important;
+            }
+
+            #when_start, #afterwards {
+                visibility : hidden;
+            }
+
+            #clickbutton {
+                width : 200 !important;
+                height : 200 !important;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class = "btn btn-primary">CPS Test</h1>
+        <div class = "container" id = "when_start">
+            <h2 id = "counter">Total Clicks : </h2>      
+            <btn class = "btn btn-success" onclick = "HeClicked()" id = "clickbutton">Click Here</btn>
+            <h2 id = "time">Time Left : </h2>
+        </div>   
+        <h2 id = "afterwards">Total Clicks : 0</h2>
+        <br> <br> <br>
+        <btn onclick = "Start()" class = "btn btn-success" id = "start">Start</btn>
+        <script src = "main.js"></script>
+        <script src = "source_code.js"></script>
+    </body>
+</html> 
